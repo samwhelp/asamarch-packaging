@@ -48,7 +48,7 @@ reinstall:
 
 
 uninstall:
-	sudo pacman -R sakura
+	sudo pacman -R qt5-styleplugins
 .PHONY: uninstall
 
 clean:
@@ -58,9 +58,9 @@ clean:
 
 
 list:
-	pacman -Ql sakura -q
+	pacman -Ql qt5-styleplugins -q
 .PHONY: list
 
 info:
-	pacman -Qi sakura
+	pacman -Qi qt5-styleplugins
 .PHONY: info
