@@ -9,8 +9,8 @@ THE_BASE_DIR_PATH="$(cd -- "$(dirname -- "$0")" ; pwd)"
 THE_CMD_FILE_NAME="$(basename "$0")"
 
 THE_TMP_DIR_PATH="${THE_BASE_DIR_PATH}/tmp"
-THE_BUD_DIR_PATH="${THE_TMP_DIR_PATH}/xcursor-breeze"
-THE_REPO_DIR_PATH="${THE_BASE_DIR_PATH}/../../../../../../asamarch-repository/repo/main"
+THE_BUD_DIR_PATH="${THE_TMP_DIR_PATH}/qt5-styleplugins"
+THE_REPO_DIR_PATH="${THE_BASE_DIR_PATH}/../../../../../asamarch-repository/repo/main"
 THE_PACK_DIR_PATH="${THE_BASE_DIR_PATH}/package"
 
 ##
@@ -89,9 +89,9 @@ mod_aur_download () {
 	
 	cd "${THE_TMP_DIR_PATH}"
 	
-	wget -c 'https://aur.archlinux.org/cgit/aur.git/snapshot/xcursor-breeze.tar.gz'
+	wget -c 'https://aur.archlinux.org/cgit/aur.git/snapshot/qt5-styleplugins.tar.gz'
 
-	tar xf xcursor-breeze.tar.gz
+	tar xf qt5-styleplugins.tar.gz
 
 	cd "${OLDPWD}"
 

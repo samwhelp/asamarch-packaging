@@ -8,10 +8,10 @@ set -e ## for Exit immediately if a command exits with a non-zero status.
 THE_BASE_DIR_PATH="$(cd -- "$(dirname -- "$0")" ; pwd)"
 THE_CMD_FILE_NAME="$(basename "$0")"
 
-THE_TMP_DIR_PATH="$THE_BASE_DIR_PATH/tmp"
-THE_BUD_DIR_PATH="$THE_TMP_DIR_PATH/sakura"
-THE_REPO_DIR_PATH="$THE_BASE_DIR_PATH/../../../../../asamarch-repository/repo/main"
-THE_PACK_DIR_PATH="$THE_BASE_DIR_PATH/package"
+THE_TMP_DIR_PATH="${THE_BASE_DIR_PATH}/tmp"
+THE_BUD_DIR_PATH="${THE_TMP_DIR_PATH}/sakura"
+THE_REPO_DIR_PATH="${THE_BASE_DIR_PATH}/../../../../../asamarch-repository/repo/main"
+THE_PACK_DIR_PATH="${THE_BASE_DIR_PATH}/package"
 
 ##
 ### Tail: Init
