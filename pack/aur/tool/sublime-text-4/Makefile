@@ -48,7 +48,7 @@ reinstall:
 
 
 uninstall:
-	sudo pacman -R sakura
+	sudo pacman -R sublime-text-4
 .PHONY: uninstall
 
 clean:
@@ -58,9 +58,9 @@ clean:
 
 
 list:
-	pacman -Ql sakura -q
+	pacman -Ql sublime-text-4 -q
 .PHONY: list
 
 info:
-	pacman -Qi sakura
+	pacman -Qi sublime-text-4
 .PHONY: info
