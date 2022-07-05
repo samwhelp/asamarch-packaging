@@ -9,11 +9,11 @@
 ## * https://wiki.archlinux.org/title/Arch_package_guidelines
 ##
 
-pkgname=asamos-modeling-plank
+pkgname=asamos-autostart-plank-on-xfce
 pkgver=0.1
 pkgrel=1
-pkgdesc="Aasamos / Modeling / Plank"
-url="https://github.com/samwhelp/asamarch-packaging/tree/main/pack/core/tool/asamos-modeling-plank"
+pkgdesc="Aasamos / Autostart / Plank / On Xfce"
+url="https://github.com/samwhelp/asamarch-packaging/tree/main/pack/core/tool/asamos-autostart-plank-on-xfce"
 arch=('any')
 license=('MIT')
 makedepends=()
