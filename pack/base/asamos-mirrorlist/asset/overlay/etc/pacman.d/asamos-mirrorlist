@@ -1,0 +1,4 @@
+
+
+#Server = file:///opt/asamos/asamarch-repository/repo/main
+Server = https://samwhelp.github.io/asamarch-repository/repo/main
