@@ -11,3 +11,22 @@
 * https://wiki.archlinux.org/title/makepkg
 * https://wiki.archlinux.org/title/PKGBUILD
 * https://wiki.archlinux.org/title/Arch_package_guidelines
+
+
+## File List
+
+run
+
+``` sh
+pacman -Ql asamos-hello -q
+```
+
+show
+
+```
+/usr/
+/usr/bin/
+/usr/bin/asamos-hello
+```
+
+* [/usr/bin/asamos-hello](asset/overlay/usr/bin/asamos-hello)
