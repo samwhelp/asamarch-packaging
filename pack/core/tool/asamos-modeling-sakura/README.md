@@ -11,3 +11,22 @@
 * https://wiki.archlinux.org/title/makepkg
 * https://wiki.archlinux.org/title/PKGBUILD
 * https://wiki.archlinux.org/title/Arch_package_guidelines
+
+
+## File List
+
+run
+
+``` sh
+pacman -Ql asamos-modeling-sakura -q
+```
+
+show
+
+```
+/etc/
+/etc/skel/
+/etc/skel/.config/
+/etc/skel/.config/sakura/
+/etc/skel/.config/sakura/sakura.conf
+```
