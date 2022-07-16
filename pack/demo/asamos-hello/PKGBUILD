@@ -19,22 +19,26 @@ conflicts=()
 provides=("${pkgname}")
 options=(!strip !emptydirs)
 
+
 prepare () {
+
+	echo "## prepare"
+
+	#echo "pwd: $(pwd)"
+	#echo "\$srcdir: ${srcdir}"
+	#echo "\$pkgdir: ${pkgdir}"
+	#return 0
+
 	cp -af ../asset/. "${srcdir}"
+	#cp -afv ../asset/. "${srcdir}"
 }
 
 
 package () {
 
-	## Path
-	local sys_bin_dir_path="${pkgdir}/usr/bin"
-	local sys_share_dir_path="${pkgdir}/usr/share/${pkgname}"
+	echo "## package"
 
-	## prepare share dir
-	mkdir -p "$sys_share_dir_path"
-
-	## install main script
-	## /usr/bin/asamos-hello
-	install -Dm755 "${srcdir}/bin/${pkgname}" "${sys_bin_dir_path}/${pkgname}"
+	cp -af "${srcdir}/overlay/". "${pkgdir}"
+	#cp -afv "${srcdir}/overlay/". "${pkgdir}"
 
 }
