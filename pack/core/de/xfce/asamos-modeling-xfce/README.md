@@ -11,3 +11,32 @@
 * https://wiki.archlinux.org/title/makepkg
 * https://wiki.archlinux.org/title/PKGBUILD
 * https://wiki.archlinux.org/title/Arch_package_guidelines
+
+
+## File List
+
+run
+
+``` sh
+pacman -Ql asamos-modeling-xfce -q
+```
+
+show
+
+```
+/etc/
+/etc/skel/
+/etc/skel/.config/
+/etc/skel/.config/xfce4/
+/etc/skel/.config/xfce4/panel/
+/etc/skel/.config/xfce4/panel/whiskermenu-1.rc
+/etc/skel/.config/xfce4/xfconf/
+/etc/skel/.config/xfce4/xfconf/xfce-perchannel-xml/
+/etc/skel/.config/xfce4/xfconf/xfce-perchannel-xml/keyboards.xml
+/etc/skel/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-desktop.xml
+/etc/skel/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml
+/etc/skel/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml
+/etc/skel/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-session.xml
+/etc/skel/.config/xfce4/xfconf/xfce-perchannel-xml/xfwm4.xml
+/etc/skel/.config/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml
+```

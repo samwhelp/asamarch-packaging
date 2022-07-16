@@ -22,6 +22,7 @@ conflicts=()
 provides=("${pkgname}")
 options=(!strip !emptydirs)
 
+
 prepare () {
 	cp -af ../asset/. "${srcdir}"
 }
@@ -54,8 +55,8 @@ package () {
 
 	## /etc/skel/.config/xfce4
 
-	#cp -af "${srcdir}/etc" "${pkgdir}"
-	cp -af "${srcdir}/." "${pkgdir}"
+	#cp -af "${srcdir}/overlay/etc/." "${pkgdir}"
+	cp -af "${srcdir}/overlay/." "${pkgdir}"
 	
 
 }
