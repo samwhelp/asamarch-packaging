@@ -22,31 +22,15 @@ conflicts=()
 provides=("${pkgname}")
 options=(!strip !emptydirs)
 
+
 prepare () {
+
 	cp -af ../asset/. "${srcdir}"
+
 }
 
 
 package () {
-
-	##
-	## Path
-	##
-
-	local sys_etc_dir_path="${pkgdir}/etc"
-	local sys_share_dir_path="${pkgdir}/usr/share/${pkgname}"
-	local sys_skel_dir_path="${sys_etc_dir_path}/skel"
-
-	##
-	## Prepare Dir
-	##
-
-	#mkdir -p "$sys_etc_dir_path"
-	#mkdir -p "$sys_share_dir_path"
-
-
-	#install -dm755 "${pkgdir}/etc/skel"
-
 
 	##
 	## Main Config
@@ -54,17 +38,12 @@ package () {
 
 	## user home
 	## /etc/skel/.config/fontconfig/conf.d/50-font-match-order.conf
-	install -Dm644 "${srcdir}/etc/skel/.config/fontconfig/conf.d/50-font-match-order.conf" "${pkgdir}/etc/skel/.config/fontconfig/conf.d/50-font-match-order.conf"
+	install -Dm644 "${srcdir}/overlay/etc/skel/.config/fontconfig/conf.d/50-font-match-order.conf" "${pkgdir}/etc/skel/.config/fontconfig/conf.d/50-font-match-order.conf"
 
 
 	## system dir
-	## /etc/fonts/local.conf
-	#install -Dm644 "${srcdir}/etc/fonts/local.conf" "${pkgdir}/etc/fonts/local.conf"
-
-
-	## system dir
-	## /etc/fonts/local.conf
-	install -Dm644 "${srcdir}/etc/fonts/conf.d/51-font-match-order.conf" "${pkgdir}/etc/fonts/conf.d/51-font-match-order.conf"
+	## /etc/fonts/conf.d/51-font-match-order.conf
+	install -Dm644 "${srcdir}/overlay/etc/fonts/conf.d/51-font-match-order.conf" "${pkgdir}/etc/fonts/conf.d/51-font-match-order.conf"
 
 
 }
