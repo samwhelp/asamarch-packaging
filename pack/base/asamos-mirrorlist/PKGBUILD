@@ -1,10 +1,4 @@
 
-##
-## * https://wiki.archlinux.org/title/Arch_User_Repository
-## * https://archlinux.org/groups/x86_64/base-devel/
-## * https://wiki.archlinux.org/title/pacman
-## * https://wiki.archlinux.org/title/PKGBUILD
-##
 
 pkgname=asamos-mirrorlist
 pkgver=0.1
@@ -19,24 +13,18 @@ conflicts=()
 provides=("${pkgname}")
 options=(!strip !emptydirs)
 
+
 prepare () {
+
 	cp -af ../asset/. "${srcdir}"
+
 }
 
 
 package () {
 
-	## Path
-	#local sys_etc_dir_path="${pkgdir}/etc"
-	#local sys_share_dir_path="${pkgdir}/usr/share/${pkgname}"
-
-	## prepare share dir
-	#mkdir -p "$sys_etc_dir_path"
-	#mkdir -p "$sys_share_dir_path"
-
-
 	## install mirrorlist
 	## /etc/pacman.d/asamos-mirrorlist
-	install -Dm644 "${srcdir}/etc/pacman.d/${pkgname}" "${pkgdir}/etc/pacman.d/${pkgname}"
+	install -Dm644 "${srcdir}/overlay/etc/pacman.d/${pkgname}" "${pkgdir}/etc/pacman.d/${pkgname}"
 
 }
