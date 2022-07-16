@@ -9,11 +9,11 @@
 ## * https://wiki.archlinux.org/title/Arch_package_guidelines
 ##
 
-pkgname=asamos-autostart-plank-on-xfce
+pkgname=asamos-autostart-cairo-dock-on-xfce
 pkgver=0.1
 pkgrel=1
-pkgdesc="Aasamos / Autostart / Plank / On Xfce"
-url="https://github.com/samwhelp/asamarch-packaging/tree/main/pack/core/tool/asamos-autostart-plank-on-xfce"
+pkgdesc="Aasamos / Autostart / Cairo Dock / On Xfce"
+url="https://github.com/samwhelp/asamarch-packaging/tree/main/pack/core/de/xfce/asamos-autostart-cairo-dock-on-xfce"
 arch=('any')
 license=('MIT')
 makedepends=()
@@ -52,8 +52,8 @@ package () {
 	## Main Config
 	##
 
-	## /etc/skel/.config/plank/plank.conf
-	#install -Dm644 "${srcdir}/etc/skel/.config/plank/plank.conf" "${pkgdir}/etc/skel/.config/plank/plank.conf"
+	## /etc/skel/.config/cairo-dock/cairo-dock.conf
+	#install -Dm644 "${srcdir}/etc/skel/.config/cairo-dock/cairo-dock.conf" "${pkgdir}/etc/skel/.config/cairo-dock/cairo-dock.conf"
 
 	#cp -af "${srcdir}/etc" "${pkgdir}"
 	cp -af "${srcdir}/." "${pkgdir}"

@@ -111,7 +111,7 @@ mod_package_make_finish () {
 
 mod_package_make_copy_to_repository () {
 
-	local repository_dir_path="../../../../../asamarch-repository/repo/main"
+	local repository_dir_path="../../../../../../asamarch-repository/repo/main"
 
 	if ! [ -d "${repository_dir_path}" ]; then
 		return
