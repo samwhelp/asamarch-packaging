@@ -20,3 +20,23 @@ Include = /etc/pacman.d/asamos-mirrorlist
 * https://wiki.archlinux.org/title/makepkg
 * https://wiki.archlinux.org/title/PKGBUILD
 * https://wiki.archlinux.org/title/Arch_package_guidelines
+
+
+## File List
+
+run
+
+``` sh
+pacman -Ql asamos-mirrorlist -q
+```
+
+show
+
+```
+/etc/
+/etc/pacman.d/
+/etc/pacman.d/asamos-mirrorlist
+```
+
+
+* [/etc/pacman.d/asamos-mirrorlist](asset/overlay/etc/pacman.d/asamos-mirrorlist)
