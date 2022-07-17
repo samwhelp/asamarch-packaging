@@ -33,3 +33,26 @@ show
 
 * [/usr/share/glib-2.0/schemas/50_cinnamon-favorite-apps.gschema.override](asset/overlay/usr/share/glib-2.0/schemas/50_cinnamon-favorite-apps.gschema.override)
 
+
+
+## Explore
+
+run
+
+``` sh
+gsettings list-recursively | grep cinnamon | grep default-applications | sort
+```
+
+show
+
+```
+org.cinnamon.desktop.default-applications.calculator exec 'gnome-calculator'
+org.cinnamon.desktop.default-applications.calculator needs-term false
+org.cinnamon.desktop.default-applications.office.calendar exec 'evolution -c calendar'
+org.cinnamon.desktop.default-applications.office.calendar needs-term false
+org.cinnamon.desktop.default-applications.office.tasks exec 'evolution -c tasks'
+org.cinnamon.desktop.default-applications.office.tasks needs-term false
+org.cinnamon.desktop.default-applications.terminal exec-arg '--'
+org.cinnamon.desktop.default-applications.terminal exec 'gnome-terminal'
+```
+
