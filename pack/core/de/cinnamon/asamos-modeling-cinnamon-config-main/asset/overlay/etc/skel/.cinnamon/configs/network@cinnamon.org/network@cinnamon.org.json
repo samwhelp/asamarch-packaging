@@ -8,7 +8,7 @@
         "description": "Show menu",
         "default": "<Shift><Super>n",
         "tooltip": "Set keybinding(s) to show the network applet menu.",
-        "value": "<Shift><Super>n"
+        "value": "<Alt><Control>n"
     },
     "__md5__": "976b46e8430522899e7fe34f2abfee76"
 }

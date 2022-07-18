@@ -21,7 +21,7 @@
         "description": "Show menu",
         "default": "<Shift><Super>s",
         "tooltip": "Set keybinding(s) to show the sound applet menu.",
-        "value": "<Shift><Super>s"
+        "value": "<Alt><Control>s"
     },
     "_knownPlayers": {
         "type": "generic",
