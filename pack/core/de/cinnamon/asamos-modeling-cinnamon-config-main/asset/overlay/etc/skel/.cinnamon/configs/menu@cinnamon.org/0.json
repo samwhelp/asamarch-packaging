@@ -73,7 +73,7 @@
         "type": "keybinding",
         "description": "Keyboard shortcut to open and close the menu",
         "default": "Super_L::Super_R",
-        "value": "Super_L::Super_R"
+        "value": "<Alt>F1::"
     },
     "menu-custom": {
         "type": "switch",
