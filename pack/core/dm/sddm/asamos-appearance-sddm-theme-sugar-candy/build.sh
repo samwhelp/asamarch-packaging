@@ -70,7 +70,7 @@ mod_package_clean () {
 	rm -rf pkg
 	rm -rf src
 	rm -rf package
-	#rm -rf gruvbox-dark-gtk
+	#rm -rf sddm-sugar-candy
 }
 
 mod_package_clean_on_finish () {
@@ -81,7 +81,7 @@ mod_package_clean_on_finish () {
 	rm -f *.zst
 	rm -rf pkg
 	rm -rf src
-	#rm -rf gruvbox-dark-gtk
+	#rm -rf sddm-sugar-candy
 }
 
 mod_package_make_prepare () {
