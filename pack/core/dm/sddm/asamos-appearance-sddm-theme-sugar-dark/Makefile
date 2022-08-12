@@ -61,7 +61,7 @@ clean:
 	rm -rf pkg
 	rm -rf src
 	rm -rf package
-	rm -rf gruvbox-dark-gtk
+	rm -rf sddm-sugar-dark
 .PHONY: clean
 
 

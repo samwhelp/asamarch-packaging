@@ -13,7 +13,7 @@ pkgname=asamos-appearance-sddm-theme-sugar-dark
 pkgver=0.1
 pkgrel=1
 pkgdesc="Asamos / Appearance / SDDM Theme / sugar-dark"
-url="https://github.com/samwhelp/asamarch-packaging/tree/main/pack/core/dm/sddm/asamos-appearance-sddm-theme-sugar-deark"
+url="https://github.com/samwhelp/asamarch-packaging/tree/main/pack/core/dm/sddm/asamos-appearance-sddm-theme-sugar-dark"
 arch=('any')
 license=('MIT')
 makedepends=()
@@ -25,7 +25,7 @@ options=(!strip !emptydirs)
 ##
 ## ## Source
 ##
-## * https://github.com/jmattheis/sddm-sugar-dark
+## * https://github.com/MarianArlt/sddm-sugar-dark
 ##
 ## ## Note
 ##
