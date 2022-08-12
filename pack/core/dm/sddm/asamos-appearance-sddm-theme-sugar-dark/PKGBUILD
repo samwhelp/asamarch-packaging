@@ -9,11 +9,11 @@
 ## * https://wiki.archlinux.org/title/Arch_package_guidelines
 ##
 
-pkgname=asamos-appearance-sddm-theme-sugar-candy
+pkgname=asamos-appearance-sddm-theme-sugar-dark
 pkgver=0.1
 pkgrel=1
-pkgdesc="Asamos / Appearance / SDDM Theme / sugar-candy"
-url="https://github.com/samwhelp/asamarch-packaging/tree/main/pack/core/dm/sddm/asamos-appearance-sddm-theme-sugar-candy"
+pkgdesc="Asamos / Appearance / SDDM Theme / sugar-dark"
+url="https://github.com/samwhelp/asamarch-packaging/tree/main/pack/core/dm/sddm/asamos-appearance-sddm-theme-sugar-deark"
 arch=('any')
 license=('MIT')
 makedepends=()
@@ -25,14 +25,14 @@ options=(!strip !emptydirs)
 ##
 ## ## Source
 ##
-## * https://github.com/jmattheis/sddm-sugar-candy
+## * https://github.com/jmattheis/sddm-sugar-dark
 ##
 ## ## Note
 ##
-## * https://samwhelp.github.io/note-about-ubuntu/read/subject/dm/sddm/sddm-theme-sugar-candy.html
+## * https://samwhelp.github.io/note-about-ubuntu/read/subject/dm/sddm/sddm-theme-sugar-dark.html
 ##
 
-source=("git+https://framagit.org/MarianArlt/sddm-sugar-candy.git")
+source=("git+https://github.com/MarianArlt/sddm-sugar-dark.git")
 
 sha256sums=('SKIP')
 
@@ -73,11 +73,11 @@ package () {
 	## Main Content
 	##
 
-	## /usr/share/sddm/themes/sddm-theme-sugar-candy
-	cp -af "${srcdir}/sddm-sugar-candy" "${pkgdir}/usr/share/sddm/themes/sddm-theme-sugar-candy"
+	## /usr/share/sddm/themes/sddm-theme-sugar-dark
+	cp -af "${srcdir}/sddm-sugar-dark" "${pkgdir}/usr/share/sddm/themes/sddm-theme-sugar-dark"
 
-	## /usr/share/sddm/themes/sddm-theme-sugar-candy/.git
-	rm -rf "${pkgdir}/usr/share/sddm/themes/sddm-theme-sugar-candy/.git"
+	## /usr/share/sddm/themes/sddm-theme-sugar-dark/.git
+	rm -rf "${pkgdir}/usr/share/sddm/themes/sddm-theme-sugar-dark/.git"
 
 
 	return 0
