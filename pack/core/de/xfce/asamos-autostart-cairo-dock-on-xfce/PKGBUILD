@@ -52,11 +52,11 @@ package () {
 	## Main Config
 	##
 
-	## /etc/skel/.config/cairo-dock/cairo-dock.conf
-	#install -Dm644 "${srcdir}/etc/skel/.config/cairo-dock/cairo-dock.conf" "${pkgdir}/etc/skel/.config/cairo-dock/cairo-dock.conf"
+	## /etc/xdg/autostart/cairo-dock-on-xfce.desktop
+	#install -Dm644 "${srcdir}/overlay/etc/xdg/autostart/cairo-dock-on-xfce.desktop" "${pkgdir}/etc/xdg/autostart/cairo-dock-on-xfce.desktop"
 
-	#cp -af "${srcdir}/etc" "${pkgdir}"
-	cp -af "${srcdir}/." "${pkgdir}"
+	#cp -af "${srcdir}/overlay/etc" "${pkgdir}"
+	cp -af "${srcdir}/overlay/." "${pkgdir}"
 	
 
 }

@@ -2,11 +2,17 @@
 # asamos-autostart-plank-on-xfce
 
 
+## Path
+
+* [/etc/xdg/autostart/plank-on-xfce.desktop](asset/overlay/etc/xdg/autostart/plank-on-xfce.desktop)
+
+
 ## Note
 
 ``` sh
 OnlyShowIn=XFCE;
 ```
+
 
 ## Reference
 

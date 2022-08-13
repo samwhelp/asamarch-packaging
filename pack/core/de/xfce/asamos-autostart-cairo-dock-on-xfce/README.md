@@ -2,11 +2,17 @@
 # asamos-autostart-cairo-dock-on-xfce
 
 
+## Path
+
+* [/etc/xdg/autostart/cairo-dock-on-xfce.desktop](asset/overlay/etc/xdg/autostart/cairo-dock-on-xfce.desktop)
+
+
 ## Note
 
 ``` sh
 OnlyShowIn=XFCE;
 ```
+
 
 ## Reference
 
