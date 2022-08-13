@@ -22,48 +22,20 @@ conflicts=()
 provides=("${pkgname}")
 options=(!strip !emptydirs)
 
+
 prepare () {
+
 	cp -af ../asset/. "${srcdir}"
+
 }
 
 
 package () {
 
 	##
-	## Path
-	##
-
-	local sys_etc_dir_path="${pkgdir}/etc"
-	local sys_share_dir_path="${pkgdir}/usr/share/${pkgname}"
-	local sys_skel_dir_path="${sys_etc_dir_path}/skel"
-
-	##
-	## Prepare Dir
-	##
-
-	#mkdir -p "$sys_etc_dir_path"
-	#mkdir -p "$sys_share_dir_path"
-
-
-	##
 	## Main Config
 	##
 
-	## /etc/skel/.config/Thunar/accels.scm
-	#install -Dm644 "${srcdir}/etc/skel/.config/Thunar/accels.scm" "${pkgdir}/etc/skel/.config/Thunar/accels.scm"
-
-	## /etc/skel/.config/Thunar/uca.xml
-	#install -Dm644 "${srcdir}/etc/skel/.config/Thunar/uca.xml" "${pkgdir}/etc/skel/.config/Thunar/uca.xml"
-
-
-	## /etc/skel/.config/xfce4/helpers.rc
-	#install -Dm644 "${srcdir}/etc/skel/.config/xfce4/helpers.rc" "${pkgdir}/etc/skel/.config/xfce4/helpers.rc"
-
-	## /etc/skel/.config/xfce4/xfconf/xfce-perchannel-xml/thunar.xml
-	#install -Dm644 "${srcdir}/etc/skel/.config/xfce4/xfconf/xfce-perchannel-xml/thunar.xml" "${pkgdir}/etc/skel/.config/xfce4/xfconf/xfce-perchannel-xml/thunar.xml"
-
-
-	#cp -af "${srcdir}/etc" "${pkgdir}"
-	cp -af "${srcdir}/." "${pkgdir}"
+	cp -af "${srcdir}/overlay/." "${pkgdir}"
 
 }
