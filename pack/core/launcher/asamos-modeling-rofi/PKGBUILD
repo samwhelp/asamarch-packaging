@@ -30,43 +30,9 @@ prepare () {
 package () {
 
 	##
-	## Path
-	##
-
-	local sys_etc_dir_path="${pkgdir}/etc"
-	local sys_share_dir_path="${pkgdir}/usr/share/${pkgname}"
-	local sys_skel_dir_path="${sys_etc_dir_path}/skel"
-
-	##
-	## Prepare Dir
-	##
-
-	#mkdir -p "$sys_etc_dir_path"
-	#mkdir -p "$sys_share_dir_path"
-
-
-	#install -dm755 "${pkgdir}/etc/skel"
-
-
-	##
 	## Main Config
 	##
 
-	## /etc/skel/.config/rofi/config.rasi
-	install -Dm644 "${srcdir}/etc/skel/.config/rofi/config.rasi" "${pkgdir}/etc/skel/.config/rofi/config.rasi"
-
-
-	##
-	## Applications (Desktop Entry)
-	##
-
-	## /usr/share/applications/rofi-show-drun.desktop
-	install -Dm644 "${srcdir}/usr/share/applications/rofi-show-drun.desktop" "${pkgdir}/usr/share/applications/rofi-show-drun.desktop"
-
-	## /usr/share/applications/rofi-show-drun.desktop
-	install -Dm644 "${srcdir}/usr/share/applications/rofi-show-run.desktop" "${pkgdir}/usr/share/applications/rofi-show-run.desktop"
-
-	## /usr/share/applications/rofi-show-drun.desktop
-	install -Dm644 "${srcdir}/usr/share/applications/rofi-show-window.desktop" "${pkgdir}/usr/share/applications/rofi-show-window.desktop"
+	cp -af "${srcdir}/overlay/." "${pkgdir}"
 
 }
