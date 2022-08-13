@@ -31,6 +31,7 @@ package () {
 	## Main Config
 	##
 
-	cp -af "${srcdir}/etc" "${pkgdir}"
+	#cp -af "${srcdir}/overlay/etc" "${pkgdir}"
+	cp -af "${srcdir}/overlay/." "${pkgdir}"
 
 }
