@@ -33,32 +33,9 @@ prepare () {
 package () {
 
 	##
-	## Path
-	##
-
-	#local sys_etc_dir_path="${pkgdir}/etc"
-	#local sys_share_dir_path="${pkgdir}/usr/share/${pkgname}"
-	#local sys_skel_dir_path="${sys_etc_dir_path}/skel"
-
-	##
-	## Prepare Dir
-	##
-
-	#mkdir -p "$sys_etc_dir_path"
-	#mkdir -p "$sys_share_dir_path"
-
-
-	#install -dm755 "${pkgdir}/etc/skel"
-
-
-	##
 	## Main Config
 	##
 
-	## /etc/skel/.config/sakura/sakura.conf
-	#install -Dm644 "${srcdir}/overlay/etc/skel/.config/sakura/sakura.conf" "${pkgdir}/etc/skel/.config/sakura/sakura.conf"
-
 	cp -af "${srcdir}/overlay/." "${pkgdir}"
-	
 
 }
