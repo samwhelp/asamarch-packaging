@@ -38,7 +38,7 @@ package () {
 
 	echo "## package"
 
-	cp -af "${srcdir}/overlay/". "${pkgdir}"
-	#cp -afv "${srcdir}/overlay/". "${pkgdir}"
+	cp -af "${srcdir}/overlay/." "${pkgdir}"
+	#cp -afv "${srcdir}/overlay/." "${pkgdir}"
 
 }
