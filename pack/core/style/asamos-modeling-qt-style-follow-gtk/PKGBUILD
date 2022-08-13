@@ -53,10 +53,10 @@ package () {
 	##
 
 	## /etc/profile.d/qt-style-follow-gtk.sh
-	#install -Dm644 "${srcdir}/etc/profile.d/qt-style-follow-gtk.sh" "${pkgdir}/etc/profile.d/qt-style-follow-gtk.sh"
+	#install -Dm644 "${srcdir}/overlay/etc/profile.d/qt-style-follow-gtk.sh" "${pkgdir}/etc/profile.d/qt-style-follow-gtk.sh"
 
-	#cp -af "${srcdir}/etc" "${pkgdir}"
-	cp -af "${srcdir}/." "${pkgdir}"
+	#cp -af "${srcdir}/overlay/etc" "${pkgdir}"
+	cp -af "${srcdir}/overlay/." "${pkgdir}"
 	
 
 }
