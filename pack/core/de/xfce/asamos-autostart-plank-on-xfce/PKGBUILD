@@ -52,11 +52,11 @@ package () {
 	## Main Config
 	##
 
-	## /etc/skel/.config/plank/plank.conf
-	#install -Dm644 "${srcdir}/etc/skel/.config/plank/plank.conf" "${pkgdir}/etc/skel/.config/plank/plank.conf"
+	## /etc/xdg/autostart/plank-on-xfce.desktop
+	#install -Dm644 "${srcdir}/overlay/etc/xdg/autostart/plank-on-xfce.desktop" "${pkgdir}/etc/xdg/autostart/plank-on-xfce.desktop"
 
-	#cp -af "${srcdir}/etc" "${pkgdir}"
-	cp -af "${srcdir}/." "${pkgdir}"
+	#cp -af "${srcdir}/overlay/etc" "${pkgdir}"
+	cp -af "${srcdir}/overlay/." "${pkgdir}"
 	
 
 }
