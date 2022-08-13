@@ -21,7 +21,9 @@ options=(!strip !emptydirs)
 
 
 prepare () {
+
 	cp -af ../asset/. "${srcdir}"
+
 }
 
 
@@ -31,7 +33,6 @@ package () {
 	## Main Config
 	##
 
-	#cp -af "${srcdir}/overlay/etc" "${pkgdir}"
 	cp -af "${srcdir}/overlay/." "${pkgdir}"
 
 }
