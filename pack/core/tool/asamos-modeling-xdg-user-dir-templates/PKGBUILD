@@ -22,41 +22,20 @@ conflicts=()
 provides=("${pkgname}")
 options=(!strip !emptydirs)
 
+
 prepare () {
+
 	cp -af ../asset/. "${srcdir}"
+
 }
 
 
 package () {
 
 	##
-	## Path
-	##
-
-	#local sys_etc_dir_path="${pkgdir}/etc"
-	#local sys_share_dir_path="${pkgdir}/usr/share/${pkgname}"
-	#local sys_skel_dir_path="${sys_etc_dir_path}/skel"
-
-	##
-	## Prepare Dir
-	##
-
-	#mkdir -p "$sys_etc_dir_path"
-	#mkdir -p "$sys_share_dir_path"
-
-
-	#install -dm755 "${pkgdir}/etc/skel"
-
-
-	##
 	## Main Config
 	##
 
-	## /etc/skel/Templates/bash.sh
-	#install -Dm644 "${srcdir}/etc/skel/Templates/bash.sh" "${pkgdir}/etc/skel/Templates/bash.sh"
-
-	#cp -af "${srcdir}/etc" "${pkgdir}"
-	cp -af "${srcdir}/." "${pkgdir}"
-
+	cp -af "${srcdir}/overlay/." "${pkgdir}"
 
 }
