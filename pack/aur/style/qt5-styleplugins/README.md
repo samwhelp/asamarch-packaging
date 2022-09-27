@@ -2,6 +2,10 @@
 # qt5-styleplugins
 
 
+## Notice
+
+* [Notice](Notice)
+
 ## Link
 
 * https://aur.archlinux.org/packages/qt5-styleplugins
