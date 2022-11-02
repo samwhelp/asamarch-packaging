@@ -27,7 +27,7 @@ options=(!strip !emptydirs)
 ##
 ## * http://tw.archive.ubuntu.com/ubuntu/pool/universe/n/numix-icon-theme/
 ## * http://tw.archive.ubuntu.com/ubuntu/pool/universe/n/numix-icon-theme/numix-icon-theme_0~20190920-1_all.deb
-## * http://tw.archive.ubuntu.com/ubuntu/pool/universe/n/numix-icon-theme/numix-icon-theme_0~20190920-2_all.deb
+## * http://tw.archive.ubuntu.com/ubuntu/pool/universe/n/numix-icon-theme/numix-icon-theme_0~20211031-1_all.deb
 ##
 ## ## Note
 ##
@@ -106,16 +106,16 @@ theme_asset_download_icon_theme_numix () {
 	## download
 
 	#wget -c 'http://tw.archive.ubuntu.com/ubuntu/pool/universe/n/numix-icon-theme/numix-icon-theme_0~20190920-1_all.deb'
-	wget -c 'http://tw.archive.ubuntu.com/ubuntu/pool/universe/n/numix-icon-theme/numix-icon-theme_0~20190920-2_all.deb'
+	wget -c 'http://tw.archive.ubuntu.com/ubuntu/pool/universe/n/numix-icon-theme/numix-icon-theme_0~20211031-1_all.deb'
 
 
 	## extract
 	## https://github.com/samwhelp/note-about-deb/tree/gh-pages/_demo/deb/concept/start
-	ar x 'numix-icon-theme_0~20190920-2_all.deb'
+	ar x 'numix-icon-theme_0~20211031-1_all.deb'
 
 	mkdir -p 'numix-icon-theme'
 
-	tar -p -C 'numix-icon-theme' -xf 'data.tar.xz'
+	tar -p -C 'numix-icon-theme' -xf 'data.tar.zst'
 
 
 	## back: "${srcdir}"
